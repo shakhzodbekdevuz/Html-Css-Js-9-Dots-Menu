@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main">
+        <p>Menu </p>
+        <span style="--i:0;--x:-1;--y:0"><img src="./img/business-report.png" alt=""></span>
+        <span style="--i:1;--x:0;--y:1"><img src="./img/calendar.png" alt=""></span>
+        <span style="--i:2;--x:0;--y:-1"><img src="./img/delete.png" alt=""></span>
+        <span style="--i:3;--x:1;--y:0"><img src="./img/gear.png" alt=""></span>
+        <span style="--i:4;--x:1;--y:1"><img src="./img/home.png" alt=""></span>
+        <span style="--i:5;--x:-1;--y:-1"><img src="./img/insert.png" alt=""></span>
+        <span style="--i:6;--x:0;--y:0"><img src="./img/money-bag.png" alt=""></span>
+        <span style="--i:7;--x:1;--y:-1"><img src="./img/printer.png" alt=""></span>
+        <span style="--i:8;--x:-1;--y:1"><img src="./img/plus.png" alt=""></span>
+    </div>
+    <script src="./main.js"></script>
+    <script type="text/javascript">
+        let main=document.querySelector('.main');
+        main.onclick=function(){
+            main.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

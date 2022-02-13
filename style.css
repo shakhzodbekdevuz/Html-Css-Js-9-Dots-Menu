@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(54, 53, 56);
+}
+.main{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    background-color: rgb(32, 32, 32);
+    border-radius:10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+}
+.main.active{
+    width: 200px;
+    height: 200px;
+}
+.main p{
+    position: absolute;
+    top: -45px;
+    color: white;
+    font-size: 26px;
+    opacity: 0;
+    transition: opacity 1s;
+    transition-delay: 0.8s;
+}
+.main.active p{
+    opacity: 1;
+    transition-delay: 0.8s;
+}
+.main span{
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background: white;
+    border-radius: 50%;
+    transition:transform 0.5s, width 0.5s ,height 0.5s , background 0.5s;
+    transform: translate(calc(12px * var(--x)),calc(12px * var(--y)));
+    transition-delay:calc(0.1s*var(--i)) ;
+}
+.main.active span{
+    background: rgb(75, 75, 75);
+    width: 45px;
+    height: 45px;
+    transform: translate(calc(60px * var(--x)),calc(60px * var(--y)));
+}
+
+.main img{
+    width: 0px;
+    transition: width 0.5s;
+}
+.main.active img{
+    width: 40px;
+}
