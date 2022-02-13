@@ -8,7 +8,7 @@ Icon Hover Effects
  - Css3
  - Javascript  
 
-**Live Demo**
+##Live Demo
 [Live Demo Link](https://iconhovereffect.netlify.app/)
 
 ## Authors
